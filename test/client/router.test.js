@@ -1,4 +1,4 @@
-var App, Backbone, BaseView, Router, should, routerConfig, clientTestHelper;
+var App, Backbone, BaseView, Router, should, routerConfig;
 
 Backbone = require('backbone');
 should = require('chai').should();
@@ -6,7 +6,6 @@ should = require('chai').should();
 App = require('../../shared/app');
 BaseView = require('../../shared/base/view');
 Router = require('../../client/router');
-clientTestHelper = require('../helpers/client_test');
 
 routerConfig = {
   app: new App,
@@ -16,9 +15,6 @@ routerConfig = {
 };
 
 describe("client/router", function() {
-
-  before(clientTestHelper.before);
-  after(clientTestHelper.after);
 
   beforeEach(function() {
     this.router = new Router(routerConfig);

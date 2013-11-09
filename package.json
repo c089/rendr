@@ -4,7 +4,7 @@
   "description": "Render your Backbone.js apps on the client and the server.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R spec ./test --recursive",
+    "test": "mocha -R spec ./test/{shared,server} --recursive",
     "coverage": "istanbul cover _mocha -- -R spec ./test --recursive",
     "postinstall": "node ./scripts/postinstall.js"
   },

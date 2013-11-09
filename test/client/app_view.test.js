@@ -1,12 +1,10 @@
-var App, AppView, should, clientTestHelper;
+var App, AppView, should;
 
 App = require('../../shared/app');
 AppView = require('../../client/app_view');
 should = require('chai').should();
-clientTestHelper = require('../helpers/client_test');
 
 describe('AppView', function() {
-  before(clientTestHelper.before);
 
   beforeEach(function() {
     this.app = new App();
@@ -15,8 +13,6 @@ describe('AppView', function() {
     window.location = {};
     window.location.pathname = "/page1";
   });
-
-  after(clientTestHelper.after);
 
   it('should intercept clicks', function(){
     var event = new $.Event('click', {metaKey: false, shiftKey: false});
