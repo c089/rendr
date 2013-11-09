@@ -15,7 +15,7 @@
   "dependencies": {
     "underscore": "1.4.4",
     "backbone": "1.0.0",
-    "async":"0.1.22",
+    "async": "0.1.22",
     "qs": "0.5.1",
     "express": "~3.2.6",
     "validator": "0.4.21",
