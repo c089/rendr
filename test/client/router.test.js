@@ -1,14 +1,11 @@
-var App, Backbone, BaseView, Router, should, routerConfig;
+var Backbone, Router, should, routerConfig;
 
 Backbone = require('backbone');
 should = require('chai').should();
-
-App = require('../../shared/app');
-BaseView = require('../../shared/base/view');
 Router = require('../../client/router');
 
 routerConfig = {
-  app: new App,
+  app: new Backbone.Model(),
   paths: {
     entryPath: __dirname + "/../fixtures"
   }
