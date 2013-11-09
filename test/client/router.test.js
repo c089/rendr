@@ -7,8 +7,9 @@ Router = require('../../client/router');
 routerConfig = {
   app: new Backbone.Model(),
   paths: {
-    entryPath: __dirname + "/../fixtures"
+    entryPath: "./test/fixtures"
   }
+
 };
 
 describe("client/router", function() {
